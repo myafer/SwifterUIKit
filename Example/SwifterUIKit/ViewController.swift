@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import SwifterUIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        let view: UIView = UIView()
+            .backgroundColor(.red)
+            .alpha(10)
+            .frame(CGRect(x: 0, y: 0, width: 0, height: 0))
+        
+        view.addSubview(view)
 
+    }
 }
 
